@@ -1,0 +1,368 @@
+@charset "UTF-8";
+
+/* Designed by はりを(http://gutyan.jp/) */
+
+
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: Verdana, "ヒラギノ角ゴ ProN W3", メイリオ, sans-serif;
+}
+
+a {
+	background: none;
+	display: inline-block;
+	outline: 0;
+	text-decoration: underline;
+	transition: 0.2s linear;
+}
+
+a:link {
+	color: #06c;
+}
+
+a:visited {
+	color: #800080;
+}
+
+a:hover {
+	color: #f33;
+	text-decoration: none;
+}
+
+a:active {
+	color: #dd0;
+	text-decoration: none;
+}
+
+body {
+	background: url("/asset/image/background.png") fixed;
+	font-size: 16px;
+	line-height: 1.25;
+	margin: 0 auto;
+	padding: 0;
+	width: 90%;
+	
+}
+
+button,
+input,
+select,
+option {
+	line-height: normal !important;
+}
+
+footer {
+	display: block;
+	font-size: 0.8em;
+	margin: 2em 1em 0.5em;
+	text-align: right;
+}
+
+header {
+	display: block;
+	margin: 1em 0;
+	text-align: center;
+}
+
+header > a > img {
+	transition: 0.25s ease;
+}
+
+header > a > img:hover {
+	transform: scale(1.25);
+	-webkit-transform: scale(1.25);
+}
+
+img {
+	border: 0;
+	display: inline-block;
+	max-width: 100%;
+}
+
+/*
+img[src^="http://analyzer1.apps.netowl.jp/"] {
+	position: absolute;
+	left: 1px;
+	top: 1px;
+}
+*/
+
+textarea {
+	font-size: 1em;
+	line-height: 1;
+	resize: none;
+}
+
+#Clock_d2_003 {
+	text-align: center;
+}
+
+#contents h1 {
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+}
+
+#counter a,
+#NINCtImageSection,
+a[href="http://counter.fc2.com/"][target="_blank"] {
+	vertical-align: middle;
+}
+
+#history {
+	background: white;
+	border: 0.1em solid gray;
+	width: 50%;
+	height: 10em;
+	overflow: auto;
+	padding: 0.5em;
+}
+
+#history p {
+	font-family: MeiryoKe_Gothic, monospace;
+	margin: 0;
+	padding: 0;
+}
+
+#index {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#index > a > img {
+	transition: 0.1s ease;
+}
+
+#index > a > img:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+
+#link-tag-source {
+	background: whitesmoke;
+	border: 0.1em solid gray;
+	display: inline-block;
+	font-size: 0.9em;
+	width: 200px;
+	height: 40px;
+	overflow: hidden;
+	transition: 0.3s ease;
+}
+
+#link-tag-source:hover,
+#link-tag-source:focus {
+	background: white;
+	border: 0.1em solid aqua;
+	height: 120px;
+}
+
+#loading {
+	display: none;
+	margin: auto;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#main {
+	margin: 1em 0 1em 325px;
+}
+
+#menu {
+	float: left;
+	font-size: 0.9em;
+	margin: 1em 0;
+	width: 100%; max-width: 300px;
+}
+
+#menu > div {
+	margin: 2em 0 0;
+}
+
+#menu > div > h2 {
+	border-left: 0.3em solid gray;
+	border-bottom: 0.15em solid gray;
+	font-size: 1.5em;
+	margin: 0 0 0.5em;
+	padding: 0.1em 0.5em;
+}
+
+#menu li {
+	margin: 0.5em 0;
+}
+
+#menu p {
+	margin: 0;
+	padding: 0;
+}
+
+#NINCtCMArea {
+	display: none !important;
+}
+
+#NowDate {
+	background: #003b93;
+	border: 0.25em whitesmoke solid;
+	border-radius: 0.25em;
+	color: whitesmoke;
+	display: inline-block;
+	font-size: 0.9em;
+	line-height: 1;
+	margin: 0;
+	padding: 0.25em;
+}
+
+#scroll-bottom,
+#scroll-top {
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 33px;
+	height: 33px;
+	position: fixed;
+	left: 1em;
+}
+
+#scroll-bottom {
+	top: 1em;
+}
+
+#scroll-top {
+	bottom: 1em;
+}
+
+.ajax-html-area {
+	background: whitesmoke;
+	margin: 0;
+	padding: 1em;
+	position: relative;
+	width: 99.5%;
+	height: 60em;
+	overflow: auto;
+	z-index: 100;
+}
+
+.clear {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+}
+
+.cw {
+	font-size: smaller;
+	text-align: center;
+}
+
+.smaller {
+	font-size: smaller;
+}
+
+.update-label {
+	color: red;
+	font-size: smaller;
+	font-weight: bold;
+	margin-left: 1em;
+}
+
+.loading_overlay {
+	background: rgba(245, 245, 245, 0.75) url("/asset/lib/fancybox_loading@2x.gif") scroll no-repeat center;
+	display: none;
+	margin: auto;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+}
+
+/*
+追加
+*/
+.maru {
+	color: #4383fc;
+	font-weight: bold;
+}
+
+.maru2 {
+	color: #fc8300;
+	font-weight: bold;
+}
+
+.newmark {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.maru3 {
+	color: #696900;
+	font-weight: bold;
+}
+
+.maru4 {
+	color: #2222fc;
+	font-weight: bold;
+}
+
+/*
+追加ここまで
+*/
+
+.marquee {
+	background-color: #f6f6f6;
+	margin-bottom: 1em;
+	overflow: hidden;
+	padding: 0.5em 0;
+	position: relative;
+	width: 100%; max-width: 600px;
+}
+
+.marquee p {
+	margin: 0;
+	padding-left: 600px;
+	display: inline-block;
+	white-space: nowrap;
+	animation-name: marquee;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.marquee p::after {
+	content: "";
+	padding-right: 50px;
+	white-space: nowrap;
+}
+
+@keyframes marquee {
+	from   { transform: translate(   0%);}
+	99%,to { transform: translate(-100%);}
+}
+/* 追加: スマホ対応 */
+@media screen and (max-width: 768px) {
+    #menu {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    #main {
+        margin: 0;
+    }
+    .marquee {
+        max-width: 100%;
+    }
+    body {
+        width: 100%;
+    }
+}

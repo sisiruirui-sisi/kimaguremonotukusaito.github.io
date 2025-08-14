@@ -1,0 +1,5 @@
+# SetEnvIf Referer "^http://nyurunn123.webcrow.jp/" ok
+# SetEnvIf Referer "^$" ok
+# order deny,allow
+# deny from all
+# allow from env=ok

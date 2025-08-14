@@ -1,0 +1,30 @@
+# SSIを.htmlで動くようにする
+AddOutputFilter INCLUDES .html
+
+
+# エラーページ指定
+ErrorDocument 400 /asset/400.html
+ErrorDocument 401 /asset/401.html
+ErrorDocument 403 /asset/403.html
+ErrorDocument 404 /asset/404.html
+ErrorDocument 500 /asset/500.html
+ErrorDocument 503 /asset/503.html
+
+# エラーページアクセス権オーバーライド
+<FilesMatch "^(400|401|403|404|500|503)\.html$">
+	allow from all
+</FilesMatch>
+
+
+# バナー直リン許可
+<Files banner.png>
+	allow from all
+</Files>
+
+
+# mod_rewrite有効化
+RewriteEngine on
+
+# URL最後尾のindex.htmlは消す（URL正規化）
+RewriteCond %{REQUEST_URI} /index\.html$
+RewriteRule ^(.*)index\.html$ http://nyurunn123.webcrow.jp/$1 [R=301,L]

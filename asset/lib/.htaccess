@@ -1,0 +1,14 @@
+<Files jQuery-fancybox.css.gz>
+	ForceType text/css
+	AddEncoding x-gzip .gz
+</Files>
+
+<Files jQuery.js.gz>
+	ForceType application/javascript
+	AddEncoding x-gzip .gz
+</Files>
+
+RewriteEngine on
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{REQUEST_FILENAME}\.gz -s
+RewriteRule .+ %{REQUEST_URI}.gz
