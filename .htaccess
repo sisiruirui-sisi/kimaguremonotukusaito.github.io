@@ -27,4 +27,4 @@ RewriteEngine on
 
 # URL最後尾のindex.htmlは消す（URL正規化）
 RewriteCond %{REQUEST_URI} /index\.html$
-RewriteRule ^(.*)index\.html$ http://nyurunn123.webcrow.jp/$1 [R=301,L]
+RewriteRule ^(.*)index\.html$ http://kimaguremonotukusaito.github.io/$1 [R=301,L]
