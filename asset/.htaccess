@@ -1,4 +1,4 @@
-# SetEnvIf Referer "^http://nyurunn123.webcrow.jp/" ok
+# SetEnvIf Referer "^http://kimaguremonotukusaito.github.io/" ok
 # SetEnvIf Referer "^$" ok
 # order deny,allow
 # deny from all
